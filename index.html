@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2 – HTTP-запросы (telnet)</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f2f2f2; margin: 0; padding: 20px; }
+        .container { max-width: 1100px; margin: auto; background: white; padding: 20px; border-radius: 15px; }
+        h1 { text-align: center; color: #2c3e50; }
+        .task { background: #fafafa; margin: 25px 0; padding: 15px; border-left: 5px solid #3498db; }
+        .task h2 { margin-top: 0; }
+        img { max-width: 100%; border: 1px solid #ccc; margin-top: 15px; border-radius: 5px; }
+        footer { text-align: center; margin-top: 30px; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📡 Задание 2: HTTP-запросы через telnet</h1>
+    <p>Студент: ghost060206 | Сервер: u82293.kubsu-dev.ru</p>
+
+    <div class="task"><h2>1. SSH вход на сервер</h2><img src="1.PNG" alt="SSH"></div>
+    <div class="task"><h2>2. GET /zadanie2/files/ HTTP/1.0</h2><img src="2.PNG" alt="GET /files/"></div>
+    <div class="task"><h2>3. GET /zadanie2/files/inner.html HTTP/1.1</h2><img src="3.PNG" alt="GET inner.html"></div>
+    <div class="task"><h2>4. HEAD /zadanie2/files/file.tar.gz – размер файла</h2><img src="4.PNG" alt="HEAD file.tar.gz"></div>
+    <div class="task"><h2>5. HEAD /zadanie2/files/image.png – медиатип</h2><img src="5.PNG" alt="HEAD image.png"></div>
+    <div class="task"><h2>6. POST /zadanie2/files/index.php – комментарий</h2><img src="6.PNG" alt="POST index.php"></div>
+    <div class="task"><h2>7. GET /zadanie2/files/file.tar.gz (Range: 0-99)</h2><img src="7.PNG" alt="GET Range"></div>
+    <div class="task"><h2>8. HEAD /zadanie2/files/index.php – кодировка</h2><img src="8.PNG" alt="HEAD index.php charset"></div>
+
+    <footer>Все запросы выполнены через telnet 192.168.199.8 80, получены 200/206.</footer>
+</div>
+</body>
+</html>
